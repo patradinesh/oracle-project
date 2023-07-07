@@ -25,7 +25,7 @@ label_prefix = "dev"
 
 create_internet_gateway = true
 
-create_nat_gateway = false
+create_nat_gateway = true
 
 create_service_gateway = false
 
@@ -35,7 +35,7 @@ vcn_cidrs = ["10.0.0.0/16", "172.16.0.0/16", "192.168.0.0/24"]
 
 vcn_dns_label = "vcn"
 
-vcn_name = "vcn"
+vcn_name = "vcn" 
 
 lockdown_default_seclist = false
 
@@ -55,8 +55,3 @@ nat_gateway_display_name = "ngw"
 service_gateway_display_name = "sgw"
 attached_drg_id = null
 
-#Subnets
-subnets = {
- sub1 = {name = "public-subnet",cidr_block = "10.0.4.0/24"}
- sub2 = {name = "private-subnet",cidr_block="10.0.5.0/24",type="private"}
-}
